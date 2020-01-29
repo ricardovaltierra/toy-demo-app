@@ -21,7 +21,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
-
-
-### Link to previous assignment (Part 1): https://github.com/ricardovaltierra/ror_tutorial_1
+* Link to previous assignment (Part 1): https://github.com/ricardovaltierra/ror_tutorial_1
