@@ -27,9 +27,6 @@
 
 * [MIT License](#mit-license)
 
-* [Creative Commons License](#creative-commons-license)
-
-
 ## About The Project
 
 Toy App to show off some of the ROR features on MCV like scaffolding, routes and REST architecture on a 'Twitter-Style' app with test suite and Heroku deployment. Scaffolding for users and micropost entitites generating models, controllers, CRUD views, assets (JS/SCSS) and test suites.
@@ -41,61 +38,69 @@ Besides the home page view (which is the list of registered users), you can acce
 Same way with micropost. To access (since it's a scaffold quick app) just add `/microposts`. Main view list. Create selecting a registered user and edit / look / delete.
 
 ## Preview
-### Watch the menu and leave a comment between tabs
-<img src="./src/assets/img/usage_1.gif" alt="Watch our menu and leave a comment" width="600" />
 
-> [Live Version](https://restaurant-clone.netlify.app/)
+<img src="./app/assets/images/usage1.gif" alt="Create and edit a user" width="600" />
+<img src="./app/assets/images/usage2.gif" alt="Create and edit a micropost" width="600" />
+
+> [Live](https://small-toy-app.herokuapp.com/)
 
 Feel free to use and recommend it.
 
 ### Built With
 
-* [HTML5](https://developer.mozilla.org/es/docs/HTML/HTML5)
+* [Ruby 2.6.4](https://www.ruby-lang.org/en/news/2019/08/28/ruby-2-6-4-released/)
 
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Rails 5.1.6](https://rubygems.org/gems/rails/versions/5.1.6)
 
-* [ES6](https://es6.io/)
+* [SCSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-* [Webpack 4](https://webpack.js.org/)
+* [SQLite 1.3.13](https://rubygems.org/gems/sqlite3/versions/1.3.13)
 
-* npm Packages used:
-    * [ESLint](https://eslint.org/)
-    * [StyleLint](https://stylelint.io/)
-    * [Webpack asset managers](https://webpack.js.org/guides/asset-management/)
+* gems:
+    * [puma](https://rubygems.org/gems/puma)
+    * [spring](https://rubygems.org/gems/spring)
+    * [pg (production)](https://rubygems.org/gems/pg)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
-Clone or fork the <a href="https://github.com/ricardovaltierra/restaurant">repo</a> [git@github.com:ricardovaltierra/restaurant.git].
-
-*note you need have install npm or yarn.
-* [npm](https://www.npmjs.com/get-npm)
-* [yarn](https://classic.yarnpkg.com/en/docs/install)
+Clone or fork the <a href="https://github.com/ricardovaltierra/toy-demo-app">repo</a> [git@github.com:ricardovaltierra/toy-demo-app.git].
 
 ## How it Works
 
-This webpage is built with pure Javascript, it needs Webpack to proper use because has various imports of code and it has various little helper functions. All of the resources (images, fonts) and .js files are located inside `/src` folder.
+This app is built on Rails Scaffolding basis, it needs Sqlite3 to proper use on development and Postgre for production. All good stuff is on `/app` folder.
 
 ### Running the code
 
-*   Navigate to the root directory of the project.
 
-*   Run this command on your terminal to add all the required packages and dependencies.
-    ```
-    $ npm install
-    ```
-*   Once that build with.
-    ```
-    $ npm run build
-    ```
-*   Now the app is ready, you can just open the generated index file on your server (can use VS Code Live).
-   
-*   If you're onto make some code edition you can 'watch' the live changes as follows.
-    ```
-    $ npm run watch
-    ```    
-   
+To get started with the app, clone the repo and then install the needed gems:
+
+```
+$ bundle install --without production
+```
+
+Next, migrate the database:
+
+```
+$ rails db:migrate
+```
+
+Finally, run the test suite to verify that everything is working correctly:
+
+```
+$ rails test
+```
+
+If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
+
+For more information, see the
+[*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -117,16 +122,3 @@ Ricardo Valtierra - [@RicardoValtie15](https://twitter.com/RicardoValtie15) - ri
 ## MIT License
 
 This project is under the [MIT](LICENSE) license.
-
-## Creative Commons License
-
-Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
-
-"Don Pastor Taquerías" by [RiveraCarlos Disegno](https://www.behance.net/riveracarlos) is licensed under a [Creative Commons Attribution-ShareAlike 4.0
-International License][cc-by-sa].
-
-[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
-
-[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
-[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
