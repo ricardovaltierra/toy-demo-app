@@ -39,7 +39,7 @@ Same way with micropost. To access (since it's a scaffold quick app) just add `/
 
 ## Preview
 
-<img src="./app/assets/images/usage1.gif" alt="Create and edit a user" width="450" /> <img src="./app/assets/images/usage2.gif" alt="Create and edit a micropost" width="450" />
+<img src="./app/assets/images/usage1.gif" alt="Create and edit a user" width="460" /> <img src="./app/assets/images/usage2.gif" alt="Create and edit a micropost" width="460" />
 
 > [Live](https://small-toy-app.herokuapp.com/)
 
