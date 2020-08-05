@@ -1,4 +1,4 @@
-# Restaurant Page
+# Toy App
 
 > Microverse ROR Project.
 
