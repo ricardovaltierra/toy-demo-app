@@ -4,9 +4,9 @@
 
 <p align="right">
   <br>
-  <a href="https://github.com/ricardovaltierra/restaurant">Explore the repo »</a>
+  <a href="https://github.com/ricardovaltierra/toy-demo-app">Explore the repo »</a>
   <br>
-  <a href="https://github.com/ricardovaltierra/restaurant/issues">Request Feature</a>
+  <a href="https://github.com/ricardovaltierra/toy-demo-app/issues">Request Feature</a>
 </p>
 
 ## Table of Contents
@@ -32,7 +32,13 @@
 
 ## About The Project
 
-Toy App to show off some of the ROR features like scaffolding, routes and REST architecture on a 'Twitter-style' app with test suite and Heroku deployment.
+Toy App to show off some of the ROR features on MCV like scaffolding, routes and REST architecture on a 'Twitter-Style' app with test suite and Heroku deployment. Scaffolding for users and micropost entitites generating models, controllers, CRUD views, assets (JS/SCSS) and test suites.
+
+Once deployed you can navigate on browser to create new users the basic way and save them on your sqlite database, same way with micropost.
+
+Besides the home page view (which is the list of registered users), you can access to views for editing, look or create a specific user.
+
+Same way with micropost. To access (since it's a scaffold quick app) just add `/microposts`. Main view list. Create selecting a registered user and edit / look / delete.
 
 ## Preview
 ### Watch the menu and leave a comment between tabs

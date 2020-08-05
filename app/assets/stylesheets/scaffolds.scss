@@ -1,16 +1,33 @@
 body {
+  position: relative;
+  display: grid;
   background-color: #fff;
   color: #333;
   margin: 33px;
+  padding: 50px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  justify-items: center;
+}
+
+table {
+  position: relative;
+  border-radius: 50px;
+  width: 100%;
+}
+
+
+td {
+  background-color: salmon;
+  border: 1px solid #ccc;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  padding: 5px;
 }
 
 pre {
@@ -34,6 +51,7 @@ a {
 
 th {
   padding-bottom: 5px;
+  background-color: rgb(240, 122, 12);
 }
 
 td {
