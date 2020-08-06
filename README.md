@@ -29,13 +29,13 @@
 
 ## About The Project
 
-Toy App to show off some of the ROR features on MCV like scaffolding, routes and REST architecture on a 'Twitter-Style' app with test suite and Heroku deployment. Scaffolding for users and micropost entitites generating models, controllers, CRUD views, assets (JS/SCSS) and test suites.
+Toy App to show off some of the ROR features on MCV like scaffolding, routes, and REST architecture on a 'Twitter-style' app with a test suite and Heroku deployment. Scaffolding for users and micropost entities generating models, controllers, CRUD views, assets (JS/SCSS), and test suites.
 
-Once deployed you can navigate on browser to create new users the basic way and save them on your sqlite database, same way with micropost.
+Once deployed you can navigate on a browser to create new users the basic way and save them on your SQLite database, same way with micropost.
 
 Besides the home page view (which is the list of registered users), you can access to views for editing, look or create a specific user.
 
-Same way with micropost. To access (since it's a scaffold quick app) just add `/microposts`. Main view list. Create selecting a registered user and edit / look / delete.
+Same way with micropost. To access (since it's a scaffold quick app) just add `/microposts`. Main view list. Create selecting a registered user and edit/look/delete.
 
 ## Preview
 
@@ -73,7 +73,7 @@ This app is built on Rails Scaffolding basis, it needs Sqlite3 to proper use on 
 ### Running the code
 
 
-To get started with the app, clone the repo and then install the needed gems:
+To get started with the app, clone the repo, and then install the needed gems:
 
 ```
 $ bundle install --without production
@@ -121,4 +121,3 @@ Ricardo Valtierra - [@RicardoValtie15](https://twitter.com/RicardoValtie15) - ri
 ## MIT License
 
 This project is under the [MIT](LICENSE) license.
-
